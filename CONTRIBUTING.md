@@ -10,3 +10,8 @@
 #### Name: Subha Sundar Chakraborty
 - GitHub: https://github.com/csubhasundar
 ```
+
+```markdown
+#### Name: Vivek Panjwani
+- GitHub: https://github.com/vivekpanjwani
+```
