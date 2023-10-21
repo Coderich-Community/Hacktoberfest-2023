@@ -19,3 +19,9 @@
 
 - GitHub: https://github.com/Mansiprajapatii
 ```
+
+```markdown
+#### Name: Arshad M. Patel
+
+- GitHub: https://github.com/arshadpatel
+```
