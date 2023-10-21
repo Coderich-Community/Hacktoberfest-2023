@@ -1,5 +1,34 @@
 # Hacktoberfest-2023
 <h1 align="center"><code>&nbsp;CODERICH COMMUNITY Website&nbsp;</code></h1>
+<img align="right" alt="coding" width="1000" src="https://raw.githubusercontent.com/mrsamirr/mrsamirr/main/1671207434449%20(1).jpg">
+
+## Table of Contents
+
+* [Getting Started](#getting-started)
+* [Installation](#installation)
+* [List of projects](#table)
+
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+To get a local copy up and running follow these simple steps.
+# 📌 Videos 📽️:
+
+- [Hacktoberfest Intro](https://www.youtube.com/watch?v=mq_FIHdxmIk)
+- [How to pull request [Overview]](https://youtu.be/DIj2q02gvKs)
+- [Merge Conflict / comment](https://youtu.be/zOx5PJTY8CI)
+
+
+# Contribution Rules📚:
+
+- You are allowed to make pull requests that break the rules. We just merge it ;)
+- Do NOT add any build steps e.g npm install (we want to keep this a simple static site)
+- Do NOT remove other content.
+- Styling/code can be pretty, ugly or stupid, big or small as long as it works
+<!-- - Add your name to the contributorsList file. -->
+- Try to keep pull requests small to minimize merge conflicts
+
 
 
 ## 💻 Quickstart
