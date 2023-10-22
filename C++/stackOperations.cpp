@@ -1,55 +1,59 @@
 #include <iostream>
 #include <vector>
 
-using namespace std; // Add this line to use the std namespace
-
 class Stack {
 private:
-    vector<int> stack;
+    std::vector<int> data;
 
 public:
+    // Push element onto the stack
     void push(int value) {
-        stack.push_back(value);
+        data.push_back(value);
     }
 
-    void pop() {
-        if (!isEmpty()) {
-            stack.pop_back();
-        } else {
-            cout << "Stack is empty. Cannot pop." << endl;
+    // Remove and return the top element from the stack
+    int pop() {
+        if (!data.empty()) {
+            int top = data.back();
+            data.pop_back();
+            return top;
         }
+        throw std::runtime_error("Stack is empty");
     }
 
+    // Get the top element of the stack without removing it
     int top() {
-        if (!isEmpty()) {
-            return stack.back();
-        } else {
-            cout << "Stack is empty. No top element." << endl;
-            return -1; // Return a default value indicating an empty stack.
+        if (!data.empty()) {
+            return data.back();
         }
+        throw std::runtime_error("Stack is empty");
     }
 
+    // Check if the stack is empty
     bool isEmpty() {
-        return stack.empty();
+        return data.empty();
+    }
+
+    // Get the size of the stack
+    size_t size() {
+        return data.size();
     }
 };
 
 int main() {
-    Stack myStack;
+    Stack stack;
 
-    myStack.push(10);
-    myStack.push(20);
-    myStack.push(30);
+    stack.push(10);
+    stack.push(20);
+    stack.push(30);
 
-    cout << "Top element: " << myStack.top() << endl;
+    std::cout << "Top element: " << stack.top() << std::endl;
 
-    myStack.pop();
-    myStack.pop();
+    stack.pop();
 
-    cout << "Top element after pops: " << myStack.top() << endl;
+    std::cout << "Top element after pop: " << stack.top() << std::endl;
 
-    myStack.pop();
-    myStack.pop(); // Trying  pop from an empty stack
+    std::cout << "Stack size: " << stack.size() << std::endl;
 
     return 0;
 }
