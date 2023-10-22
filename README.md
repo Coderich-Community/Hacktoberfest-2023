@@ -1,6 +1,6 @@
-# Hacktoberfest-2023
+
 <h1 align="center"><code>&nbsp;CODERICH COMMUNITY Website&nbsp;</code></h1>
-<img align="right" alt="coding" width="1000" src="https://raw.githubusercontent.com/mrsamirr/mrsamirr/main/1671207434449%20(1).jpg">
+
 
 # 🎉 What is [Hacktoberfest](https://hacktoberfest.com)?
 
