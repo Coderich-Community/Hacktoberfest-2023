@@ -2,33 +2,33 @@
 <h1 align="center"><code>&nbsp;CODERICH COMMUNITY Website&nbsp;</code></h1>
 <img align="right" alt="coding" width="1000" src="https://raw.githubusercontent.com/mrsamirr/mrsamirr/main/1671207434449%20(1).jpg">
 
-## Table of Contents
+# 🎉 What is [Hacktoberfest](https://hacktoberfest.com)?
 
-* [Getting Started](#getting-started)
-* [Installation](#installation)
-* [List of projects](#table)
+<img src="https://user-images.githubusercontent.com/92796050/266771938-f96a74f7-f772-4844-97e0-59cf22e18899.png" />
 
+Hacktoberfest 2023 is a month-long virtual festival celebrating open-source contributions. It's the perfect entry point for newcomers to the world of open source!
 
-<!-- GETTING STARTED -->
-## Getting Started
+Throughout October 2023, all you need to do is contribute to any open-source project and merge at least four pull requests. Yes, you can choose any project and any type of contribution. You don't need to be an expert coder; it could be a bug fix, an improvement, or even a documentation update!
 
-To get a local copy up and running follow these simple steps.
-# 📌 Videos 📽️:
+Hacktoberfest welcomes participants from all corners of our global community. Whether you're an experienced developer, a coding enthusiast just starting out, an event organizer, or a company of any size, you can help drive the growth of open source and make positive contributions to an ever-expanding community. People from diverse backgrounds and skill levels are encouraged to take part.
 
-- [Hacktoberfest Intro](https://www.youtube.com/watch?v=mq_FIHdxmIk)
-- [How to pull request [Overview]](https://youtu.be/DIj2q02gvKs)
-- [Merge Conflict / comment](https://youtu.be/zOx5PJTY8CI)
+Hacktoberfest is an inclusive event open to everyone in our global community!
+Pull requests can be submitted to any GitHub or GitLab-hosted repository or project.
+You can sign up anytime between October 1 and October 31, 2023.
 
+## 🤔 Why Should I Contribute?
 
-# Contribution Rules📚:
+Hacktoberfest has a straightforward goal: to promote open source and reward those who contribute to it.
 
-- You are allowed to make pull requests that break the rules. We just merge it ;)
-- Do NOT add any build steps e.g npm install (we want to keep this a simple static site)
-- Do NOT remove other content.
-- Styling/code can be pretty, ugly or stupid, big or small as long as it works
-<!-- - Add your name to the contributorsList file. -->
-- Try to keep pull requests small to minimize merge conflicts
+However, it's not just about the T-shirts and stickers; it's about supporting and celebrating open source while giving back to the community. If you've never contributed to open source before, now is the perfect time to start. Hacktoberfest offers a wide range of contribution opportunities, including plenty suitable for beginners.
 
+## 👨‍💻 What Can I Contribute?
+
+Hacktoberfest is inclusive and open to everyone, regardless of your background or skill level. Whether you're a seasoned developer, a student learning to code, an event host, or a company of any size, you can help foster the growth of open source and make meaningful contributions to a thriving community.
+
+Contributions don't have to be limited to code; they can include documentation updates or fixing typos.
+
+You can contribute to any open source project hosted on GitHub.com between October 1 and October 31, 2023. Look for issues labeled with "hacktoberfest" or "good-first-issue" on GitHub; these are typically beginner-friendly and easy to tackle.
 
 
 ## 💻 Quickstart
@@ -65,41 +65,6 @@ Make it clear what hacks you've used to keep this website afloat. Your work need
 To display your contributions to visitors and future contributors.
 
 <br>
-
-## 👨‍💻 Our valuable Contributors
-
-This project is made possible by our valuable contributors.
-
-
-
-
-# 🎉 What is [Hacktoberfest](https://hacktoberfest.com)?
-
-<img src="https://user-images.githubusercontent.com/92796050/266771938-f96a74f7-f772-4844-97e0-59cf22e18899.png" />
-
-Hacktoberfest 2023 is a month-long virtual festival celebrating open-source contributions. It's the perfect entry point for newcomers to the world of open source!
-
-Throughout October 2023, all you need to do is contribute to any open-source project and merge at least four pull requests. Yes, you can choose any project and any type of contribution. You don't need to be an expert coder; it could be a bug fix, an improvement, or even a documentation update!
-
-Hacktoberfest welcomes participants from all corners of our global community. Whether you're an experienced developer, a coding enthusiast just starting out, an event organizer, or a company of any size, you can help drive the growth of open source and make positive contributions to an ever-expanding community. People from diverse backgrounds and skill levels are encouraged to take part.
-
-Hacktoberfest is an inclusive event open to everyone in our global community!
-Pull requests can be submitted to any GitHub or GitLab-hosted repository or project.
-You can sign up anytime between October 1 and October 31, 2023.
-
-## 🤔 Why Should I Contribute?
-
-Hacktoberfest has a straightforward goal: to promote open source and reward those who contribute to it.
-
-However, it's not just about the T-shirts and stickers; it's about supporting and celebrating open source while giving back to the community. If you've never contributed to open source before, now is the perfect time to start. Hacktoberfest offers a wide range of contribution opportunities, including plenty suitable for beginners.
-
-## 👨‍💻 What Can I Contribute?
-
-Hacktoberfest is inclusive and open to everyone, regardless of your background or skill level. Whether you're a seasoned developer, a student learning to code, an event host, or a company of any size, you can help foster the growth of open source and make meaningful contributions to a thriving community.
-
-Contributions don't have to be limited to code; they can include documentation updates or fixing typos.
-
-You can contribute to any open source project hosted on GitHub.com between October 1 and October 31, 2023. Look for issues labeled with "hacktoberfest" or "good-first-issue" on GitHub; these are typically beginner-friendly and easy to tackle.
 
 ## Do's and Don'ts of Hacktoberfest
 
