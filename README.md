@@ -1,7 +1,4 @@
 
-<h1 align="center"><code>&nbsp;CODERICH COMMUNITY Website&nbsp;</code></h1>
-
-
 # 🎉 What is [Hacktoberfest](https://hacktoberfest.com)?
 
 <img src="https://user-images.githubusercontent.com/92796050/266771938-f96a74f7-f772-4844-97e0-59cf22e18899.png" />
@@ -65,14 +62,3 @@ Make it clear what hacks you've used to keep this website afloat. Your work need
 To display your contributions to visitors and future contributors.
 
 <br>
-
-## Do's and Don'ts of Hacktoberfest
-
-<h4>Don't: open pull requests with minor text edits on other people's repositories</h4>
- If you're looking for a faster way to open four PR's and win, there's a better way!
-
-<h4>Do: Follow a repository's contribution guidelines</h4>
- Almost every repo looking for help has a CONTRIBUTING.md file in it, read it first!
-
-<h4>Don't: feel intimidated</h4>
-
