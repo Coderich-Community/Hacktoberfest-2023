@@ -1,0 +1,33 @@
+# Ignore build and output directories
+bin/
+out/
+build/
+target/
+release/
+dist/
+.idea/
+.vscode/
+*.suo
+*.user
+*.sdf
+
+# Ignore compiler-generated files
+*.o
+*.out
+*.class
+*.jar
+*.exe
+*.dll
+
+# Ignore text editor/IDE-specific files
+*.swo
+*.swp
+*.swn
+*.suo
+*.user
+*.log
+*.orig
+
+# Ignore OS-generated files
+.DS_Store
+Thumbs.db
