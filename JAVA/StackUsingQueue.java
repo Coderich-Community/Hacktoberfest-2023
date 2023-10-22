@@ -37,16 +37,4 @@ public class StackUsingQueue {
     public boolean isEmpty() {
         return queue1.isEmpty() && queue2.isEmpty();
     }
-
-    public static void main(String[] args) {
-        StackUsingQueue stack = new StackUsingQueue();
-        stack.push(1);
-        stack.push(2);
-        stack.push(3);
-
-        System.out.println(stack.top());  // Output: 3
-        System.out.println(stack.pop());  // Output: 3
-        System.out.println(stack.pop());  // Output: 2
-        System.out.println(stack.isEmpty());  // Output: false
-    }
 }
