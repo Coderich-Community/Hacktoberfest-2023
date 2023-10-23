@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,48 +10,96 @@
   <script src="jquery1_min.js"></script>
   <script src="circlequeue.js"></script> <!-- Removed the leading slash -->
 </head>
+
 <body>
-  
-    <header class="header">
-      <nav class="navbar">
-        <h2 class="logo"><a href="#">CodeRich Community</a></h2>
-        <input type="checkbox" id="menu-toggle" />
-        <label for="menu-toggle" id="hamburger-btn">
-          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
-            <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          </svg>
-        </label>
-        <ul class="links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact Us</a></li>
+
+  <header class="header">
+    <nav class="navbar">
+      <h2 class="logo"><a href="#">CodeRich Community</a></h2>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" id="hamburger-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+          <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </label>
+      <ul class="links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#footer1">Contact Us</a></li>
+      </ul>
+      <div class="buttons">
+        <a href="#" class="signin">Sign In</a>
+        <a href="#" class="signup">Sign Up</a>
+      </div>
+    </nav>
+  </header>
+  <section class="hero-section">
+    <div class="hero">
+      <h2>E-Learning Platform</h2>
+      <p>
+        "Embark on an exciting programming journey to bring your ideas to life. Discover limitless possibilities as you
+        master the art of coding and play a pivotal role in shaping our digital future."
+      </p>
+      <div class="buttons">
+        <a href="#" class="join">Join Now</a>
+        <a href="#" class="learn">Learn More</a>
+      </div>
+    </div>
+    <div class="img">
+      <img src="/CodeRich Website/images/hero-bg.png" alt="hero image" />
+    </div>
+  </section>
+
+
+
+  <!-- Footer code -->
+
+  <section id="footer1" class="footer">
+    <div class="footer-row">
+      <div class="footer-col">
+      </div>
+      <!-- Add more columns and content as needed -->
+    </div>
+  </section>
+
+
+  <footer class="beautiful-footer">
+    <div class="footer-row">
+      <div class="footer-col">
+        <h4>About Us</h4>
+        <p>"Welcome to CodeRich where we code innovation and turn ideas into reality with passion and expertise</p>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="#">Product 1</a></li>
+          <li><a href="#">Product 2</a></li>
+          <li><a href="#">Product 3</a></li>
+          <li><a href="#">Product 4</a></li>
         </ul>
-        <div class="buttons">
-          <a href="#" class="signin">Sign In</a>
-          <a href="#" class="signup">Sign Up</a>
-        </div>
-      </nav>
-    </header>
-    <section class="hero-section">
-      <div class="hero">
-        <h2>E-Learning Platform</h2>
-        <p>
-          "Embark on an exciting programming journey to bring your ideas to life. Discover limitless possibilities as you master the art of coding and play a pivotal role in shaping our digital future."
-        </p>
-        <div class="buttons">
-          <a href="#" class="join">Join Now</a>
-          <a href="#" class="learn">Learn More</a>
-        </div>
       </div>
-      <div class="img">
-        <img src="/CodeRich Website/images/hero-bg.png" alt="hero image" />
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Tutorials</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
       </div>
-    </section>
-  </div>
- 
-
-
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <address>
+          <a href="mailto:info@example.com">Email: Coderich@example.com</a>
+          123 Street Name<br>
+          City, Country<br>
+          
+          
+        </address>
+      </div>
+    </div>
+  </footer>
+  
 </body>
 
 </html>

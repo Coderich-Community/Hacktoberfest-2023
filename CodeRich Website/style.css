@@ -16,7 +16,7 @@ body {
 }
 
 .header {
-  position: fixed;
+ position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -96,6 +96,7 @@ body {
 }
 
 .hero-section .hero {
+  display: block;
   max-width: 50%;
   color: #fff;
 }
@@ -217,5 +218,113 @@ body {
 
   .hero-section .buttons a {
     padding: 10px 20px;
+  }
+}
+
+.beautiful-footer {
+  background: #10182F;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-col {
+  flex: 1;
+  padding: 0 20px;
+  text-align: center;
+}
+
+h4 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #00a8e8;
+}
+
+address {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+  .footer-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-col {
+    flex: 1;
+    padding: 20px 0;
+  }
+}
+
+/* responsiveness */
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+  .footer-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-col {
+    flex: 1;
+    padding: 20px 0;
+  }
+
+  h4 {
+    font-size: 20px; /* Adjust font size for headings on smaller screens */
+  }
+
+  p {
+    font-size: 14px; /* Adjust font size for paragraphs on smaller screens */
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 8px; /* Reduce margin for list items on smaller screens */
+  }
+
+  address {
+    font-size: 12px; /* Adjust font size for address on smaller screens */
+    line-height: 1.4;
+  }
+
+  .footer-col:nth-child(1),
+  .footer-col:nth-child(2),
+  .footer-col:nth-child(3) {
+    display: none; /* Hide the "About Us," "Products," and "Resources" sections for smaller screens */
   }
 }
