@@ -1,59 +1,55 @@
 #include <iostream>
 #include <vector>
 
+using namespace std; // Add this line to use the std namespace
+
 class Stack {
 private:
-    std::vector<int> data;
+    vector<int> stack;
 
 public:
-    // Push element onto the stack
     void push(int value) {
-        data.push_back(value);
+        stack.push_back(value);
     }
 
-    // Remove and return the top element from the stack
-    int pop() {
-        if (!data.empty()) {
-            int top = data.back();
-            data.pop_back();
-            return top;
+    void pop() {
+        if (!isEmpty()) {
+            stack.pop_back();
+        } else {
+            cout << "Stack is empty. Cannot pop." << endl;
         }
-        throw std::runtime_error("Stack is empty");
     }
 
-    // Get the top element of the stack without removing it
     int top() {
-        if (!data.empty()) {
-            return data.back();
+        if (!isEmpty()) {
+            return stack.back();
+        } else {
+            cout << "Stack is empty. No top element." << endl;
+            return -1; // Return a default value indicating an empty stack.
         }
-        throw std::runtime_error("Stack is empty");
     }
 
-    // Check if the stack is empty
     bool isEmpty() {
-        return data.empty();
-    }
-
-    // Get the size of the stack
-    size_t size() {
-        return data.size();
+        return stack.empty();
     }
 };
 
 int main() {
-    Stack stack;
+    Stack myStack;
 
-    stack.push(10);
-    stack.push(20);
-    stack.push(30);
+    myStack.push(10);
+    myStack.push(20);
+    myStack.push(30);
 
-    std::cout << "Top element: " << stack.top() << std::endl;
+    cout << "Top element: " << myStack.top() << endl;
 
-    stack.pop();
+    myStack.pop();
+    myStack.pop();
 
-    std::cout << "Top element after pop: " << stack.top() << std::endl;
+    cout << "Top element after pops: " << myStack.top() << endl;
 
-    std::cout << "Stack size: " << stack.size() << std::endl;
+    myStack.pop();
+    myStack.pop(); // Trying  pop from an empty stack
 
     return 0;
 }
