@@ -1,119 +1,86 @@
 #include <iostream>
 using namespace std;
 
-#define MAX_SIZE 5
+const int MAX_SIZE = 5; // Maximum size of the queue
 
 class CircularQueue {
 private:
-    int* arr;
-    int maxSize;
     int front, rear;
+    int arr[MAX_SIZE];
 
 public:
-    // Constructor initializes front and rear to -1 indicating an empty queue
-     CircularQueue(int size) : maxSize(size), front(-1), rear(-1) {
-        arr = new int[maxSize];
+    CircularQueue() {
+        front = rear = -1; 
     }
 
-    // Function to check if the queue is empty
+    // check if the queue is empty
     bool isEmpty() {
         return (front == -1 && rear == -1);
     }
 
-    // Function to check if the queue is full
+    //  check if the queue is full
     bool isFull() {
         return (front == (rear + 1) % MAX_SIZE);
     }
 
-    // Function to enqueue an element to the queue
-    void enqueue(int item) {
+    //  enqueue  an element
+    void enqueue(int value) {
         if (isFull()) {
-            cout << "Queue is full. Cannot enqueue element." << endl;
-        } else {
-            // If the queue is empty, set front and rear to 0
-            if (isEmpty()) {
-                front = rear = 0;
-            } else {
-                // Circularly increment rear index
-                rear = (rear + 1) % MAX_SIZE;
-            }
-            arr[rear] = item;
-            cout << item << " enqueued to the queue." << endl;
+            cout << "Queue is full. Cannot enqueue." << endl;
+            return;
         }
+        if (isEmpty()) {
+            front = rear = 0; // 
+        } else {
+            rear = (rear + 1) % MAX_SIZE; // Circular increment of rear
+        }
+        arr[rear] = value;
+        cout << value << " enqueued to the queue." << endl;
     }
 
-    // Function to dequeue an element from the queue
+    // dequeue  an element
     void dequeue() {
         if (isEmpty()) {
-            cout << "Queue is empty. Cannot dequeue element." << endl;
+            cout << "Queue is empty. Cannot dequeue." << endl;
+            return;
+        }
+        cout << arr[front] << " dequeued from the queue." << endl;
+        if (front == rear) {
+            front = rear = -1; 
         } else {
-            int removedItem = arr[front];
-            // If there is only one element in the queue, reset front and rear to -1
-            if (front == rear) {
-                front = rear = -1;
-            } else {
-                // Circularly increment front index
-                front = (front + 1) % MAX_SIZE;
-            }
-            cout << removedItem << " dequeued from the queue." << endl;
+            front = (front + 1) % MAX_SIZE; // Circular increment of front
         }
     }
 
-    // Function to display the elements in the queue
+    // display the elements of the queue
     void display() {
         if (isEmpty()) {
             cout << "Queue is empty." << endl;
-        } else {
-            int i = front;
-            cout << "Queue: ";
-            // Loop through the queue elements using circular index calculation
-            do {
-                cout << arr[i] << " ";
-                i = (i + 1) % MAX_SIZE;
-            } while (i != (rear + 1) % MAX_SIZE);
-            cout << endl;
+            return;
         }
+        cout << "Elements in the queue: ";
+        int i = front;
+        while (true) {
+            cout << arr[i] << " ";
+            if (i == rear)
+                break;
+            i = (i + 1) % MAX_SIZE; // Circular increment of index
+        }
+        cout << endl;
     }
-
-    // Destructor to release dynamically allocated memory
-    ~CircularQueue() {
-        delete[] arr;
-    }
-
 };
 
-// Driver program
 int main() {
-    int maxSize;
-    cout << "Enter the maximum size of the circular queue: ";
-    cin >> maxSize;
-
-    CircularQueue queue(maxSize);
-
-    // Enqueue elements to the queue
+    CircularQueue queue;
     queue.enqueue(1);
     queue.enqueue(2);
     queue.enqueue(3);
-    queue.display(); // Queue: 1 2 3
-
-    // Dequeue an element and display the queue
+    queue.display();
     queue.dequeue();
-    queue.display(); // Queue: 2 3
-
-    // Enqueue more elements
+    queue.display();
     queue.enqueue(4);
     queue.enqueue(5);
-    queue.display(); // Queue: 2 3 4 5
-
-    // Attempt to enqueue when the queue is full
-    queue.enqueue(6); // Queue is full, cannot enqueue 6
-
-    // Dequeue all elements from the queue
-    queue.dequeue();
-    queue.dequeue();
-    queue.dequeue();
-    queue.dequeue();
-    queue.dequeue(); // Queue is empty, cannot dequeue further
-
+    queue.display();
+    queue.enqueue(6); // This will show an error as the queue is full.
     return 0;
 }
